@@ -28,6 +28,20 @@ Read this file at the start of every new prompt before making changes.
 - AI collaboration guide template: `templates/AGENTS.md`
 - GitHub connection guide: `docs/github-new-project-connection.md`
 
+## Create A New Project
+
+Use this repository as the source template for a new project:
+
+1. Create a new local folder, for example `D:\dev\NewProjectName`.
+2. Copy all contents of `templates/` into the new project root.
+3. Replace `NewProjectName` in the copied files with the real project name.
+4. Create the GitHub repository for the new project.
+5. Initialize git in the new project if needed, add the GitHub remote, and push.
+6. Run `make setup-check` in the new project root.
+7. Start adding application code and project-specific build/test files.
+
+For the detailed project setup flow, use `templates/README.md` and `docs/github-new-project-connection.md`.
+
 ## Area Map
 
 - `templates/` (Active)

@@ -8,6 +8,39 @@
 
 This directory is a drop-in starter kit for a new GitHub-hosted project. Copy all contents of `templates/` into the root of a new repository, then replace placeholder names such as `NewProjectName`.
 
+## Create A New Project
+
+Use this sequence when starting a new repository from this template:
+
+1. Create the new project folder, for example `D:\dev\NewProjectName`.
+2. Copy all files from `templates/` into the new project root, including dotfiles.
+3. Open the new project folder in your editor.
+4. Search for `NewProjectName` and replace it with the real project name.
+5. Review `AGENTS.md`, `README.md`, and the GitHub connection guide for any project-specific edits.
+6. Create the GitHub repository.
+7. Initialize git if the folder is not already a repository:
+
+```bash
+git init -b main
+git add .
+git commit -m "Initialize project from template"
+```
+
+8. Add the GitHub remote and push:
+
+```bash
+git remote add origin https://github.com/Xplatform12/NewProjectName.git
+git push -u origin main
+```
+
+9. Run the baseline checks:
+
+```bash
+make setup-check
+```
+
+10. Start adding project-specific code, build files, and dependencies.
+
 ## Day One Commands
 
 Run from repository root:
