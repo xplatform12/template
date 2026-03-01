@@ -1,0 +1,23 @@
+repos:
+  - repo: local
+    hooks:
+      - id: docs-check
+        name: docs-check
+        entry: make docs-check
+        language: system
+        pass_filenames: false
+      - id: docs-status
+        name: docs-status (non-blocking)
+        entry: make docs-status
+        language: system
+        pass_filenames: false
+        stages: [manual]
+
+  # Optional markdown lint hook. Enable only if markdownlint-cli is installed.
+  # - repo: local
+  #   hooks:
+  #     - id: markdownlint
+  #       name: markdownlint
+  #       entry: markdownlint "**/*.md"
+  #       language: system
+  #       pass_filenames: false

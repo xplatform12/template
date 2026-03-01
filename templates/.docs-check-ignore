@@ -1,0 +1,2 @@
+# Legacy example docs with intentionally non-local sample paths
+docs/examples/*.md

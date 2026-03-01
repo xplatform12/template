@@ -1,0 +1,32 @@
+# Dependencies and tool caches
+node_modules/
+.venv/
+venv/
+__pycache__/
+
+# Build output and reports
+dist/
+build/
+out/
+coverage/
+.cache/
+
+# Local environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
